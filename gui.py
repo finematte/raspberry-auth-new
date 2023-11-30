@@ -41,22 +41,18 @@ def submit_code():
         messagebox.showerror("Error", f"Request failed: {e}")
 
 
-# Set up the main application window
 root = tk.Tk()
 root.title("Raspberry Pi Device Pairing")
-root.geometry("400x170")  # Width x Height
+root.geometry("400x170")
 
-# Create widgets
 label = tk.Label(root, text="Enter Code", font=("Helvetica", 20))
 code_entry = tk.Entry(root, font=("Helvetica", 12), width=16, justify="center")
 submit_button = tk.Button(
     root, text="Pair Device", command=submit_code, font=("Helvetica", 12)
 )
 
-# Place widgets in the window
 label.pack(pady=10)
 code_entry.pack(pady=10)
 submit_button.pack(pady=10)
 
-# Start the GUI event loop
 root.mainloop()
