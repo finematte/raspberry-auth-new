@@ -1,7 +1,7 @@
 
 # Raspberry Pi Pairing Script
 
-A brief description of what this project does and who it's for
+GUI program to pair device with user.
 
 
 ## Installation
