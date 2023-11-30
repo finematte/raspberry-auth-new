@@ -15,7 +15,7 @@ def save_device_id(device_id):
     if not os.path.exists(directory):
         os.makedirs(directory, mode=0o700)
 
-    subprocess(["sudo", "chmod", "7777", "/var/lib/greenmind"])
+    subprocess.run(["sudo", "chmod", "7777", "/var/lib/greenmind"])
 
     try:
         with open(DEVICE_ID_FILE_PATH, "w") as file:
